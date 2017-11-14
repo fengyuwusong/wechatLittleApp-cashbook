@@ -1,0 +1,35 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/demo/demo"    
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "记账本",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#eeeeee",
+    "onReachBottomDistance":50
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#0000000",
+    "postion":"top",
+    "list": [
+      {
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "resource/home.png",
+      "selectedIconPath": "resource/select_home.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "首页",
+        "iconPath": "resource/home.png",
+        "selectedIconPath": "resource/select_home.png"
+      }
+    ]
+  }
+}
