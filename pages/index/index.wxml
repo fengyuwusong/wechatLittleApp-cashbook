@@ -1,28 +1,20 @@
-<!--index.wxml-->
-<!-- 数据绑定 -->
-<view>{{text}}</view>
-<button bindtap="changeText"> Change normal data </button>
-<view>{{num}}</view>
-<button bindtap="changeNum"> Change normal num </button>
-<view>{{array[0].text}}</view>
-<button bindtap="changeItemInArray"> Change Array data </button>
-<view>{{object.text}}</view>
-<button bindtap="changeItemInObject"> Change Object data </button>
-<view>{{newField.text}}</view>
-<button bindtap="addNewField"> Add new data </button>
-<!--遍历  -->
-<view wx:for="{{array}}" wx:for-index="idx" wx:for-item="item">
-  {{idx}}:{{item.text}}
-</view>
-<!-- if判断 -->
-<view wx:if="{{view==true}}">
-  wx:if
-</view>
+<!--pages/index/index.wxml-->
+<import src="post-item/post-item-template.wxml"/>
+<swiper indicator-dots='true' autoplay='true' interval='3000'>
+    <swiper-item>
+        <image src="/resource/images/wx.png"></image>
+    </swiper-item>
+    <swiper-item>
+        <image src="/resource/images/vr.png"></image>
+    </swiper-item>
+    <swiper-item>
+        <image src="/resource/images/wx.png"></image>
+    </swiper-item>
+</swiper>
 
-<!--模板  -->
-<template name="template">
-  <view>name:{{name}}</view>
-</template>
-<!--...temolate1 将对象展开  -->
-<template is="template" data="{{...template1}}"></template>
-<template is="template" data="{{...template2}}"></template>
+
+<block wx:for="{{postList}}" wx:for-item="item" wx:key="*this">
+<view data-postId="{{item.postId}}">
+<template is="postItem" data="{{...item}}"/>
+</view>
+</block>

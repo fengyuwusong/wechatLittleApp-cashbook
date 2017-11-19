@@ -1,34 +1,34 @@
 {
-  "pages":[
+  "pages": [
+    "pages/welcome/welcome",
     "pages/index/index",
-    "pages/logs/logs",
-    "pages/demo/demo"    
+    "pages/movie/movie"
   ],
-  "window":{
-    "backgroundTextStyle":"dark",
-    "navigationBarBackgroundColor": "#fff",
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fffff",
     "navigationBarTitleText": "记账本",
-    "navigationBarTextStyle":"black",
+    "navigationBarTextStyle": "black",
     "enablePullDownRefresh": true,
     "backgroundColor": "#eeeeee",
-    "onReachBottomDistance":50
+    "onReachBottomDistance": 50
   },
   "tabBar": {
     "color": "#000000",
     "selectedColor": "#0000000",
-    "postion":"top",
+    "postion": "top",
     "list": [
       {
-      "pagePath": "pages/index/index",
-      "text": "首页",
-      "iconPath": "resource/home.png",
-      "selectedIconPath": "resource/select_home.png"
+        "pagePath": "pages/index/index",
+        "text": "阅读",
+        "iconPath": "resource/images/tab/yuedu.png",
+        "selectedIconPath": "resource/images/tab/yuedu_hi.png"
       },
       {
-        "pagePath": "pages/logs/logs",
-        "text": "首页",
-        "iconPath": "resource/home.png",
-        "selectedIconPath": "resource/select_home.png"
+        "pagePath": "pages/movie/movie",
+        "text": "电影",
+        "iconPath": "resource/images/tab/dianying.png",
+        "selectedIconPath": "resource/images/tab/dianying_hi.png"
       }
     ]
   }

@@ -1,6 +1,18 @@
-// pages/index/index.js
-var postsData = require('../../data/posts-data')
+// pages/welcome/welcome.js
 Page({
+
+    //点击跳转
+    click: function () {
+        wx.switchTab({
+            url: "/pages/index/index",
+            success: function (res) {
+            },
+            fail: function (res) {
+            },
+            complete: function (res) {
+            },
+        })
+    },
 
     /**
      * 页面的初始数据
@@ -11,9 +23,7 @@ Page({
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
-        this.setData({
-            postList: postsData.postList
-        })
+
     },
 
     /**
