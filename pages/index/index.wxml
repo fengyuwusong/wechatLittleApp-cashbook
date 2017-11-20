@@ -14,7 +14,7 @@
 
 
 <block wx:for="{{postList}}" wx:for-item="item" wx:key="*this">
-<view data-postId="{{item.postId}}">
+<view data-post-id="{{item.postId}}" catchtap="onPostTap">
 <template is="postItem" data="{{...item}}"/>
 </view>
 </block>

@@ -2,12 +2,13 @@
   "pages": [
     "pages/welcome/welcome",
     "pages/index/index",
-    "pages/movie/movie"
+    "pages/movie/movie",
+    "pages/index/post-detail/post-detail"
   ],
   "window": {
     "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#fffff",
-    "navigationBarTitleText": "记账本",
+    "navigationBarTitleText": "测试小程序",
     "navigationBarTextStyle": "black",
     "enablePullDownRefresh": true,
     "backgroundColor": "#eeeeee",
