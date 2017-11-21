@@ -47,6 +47,8 @@ App({
     console.log(msg);
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    isPlayingMusic:false,
+    baseUrl:"https://api.douban.com",
   }
 })

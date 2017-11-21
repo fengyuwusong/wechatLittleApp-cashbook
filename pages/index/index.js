@@ -19,5 +19,13 @@ Page({
         wx.navigateTo({
           url: 'post-detail/post-detail?id='+postId
         })
+    },
+    onSwiperPostTap: function (event) {
+        //不是该节点不能从currentTartget捕捉 postid
+        //从target捕捉
+        wx.navigateTo({
+            url: 'post-detail/post-detail?id=' + event.target.dataset.postId
+        })
     }
+    
 })

@@ -1,36 +1,35 @@
 {
-  "pages": [
-    "pages/welcome/welcome",
-    "pages/index/index",
-    "pages/movie/movie",
-    "pages/index/post-detail/post-detail"
-  ],
-  "window": {
-    "backgroundTextStyle": "dark",
-    "navigationBarBackgroundColor": "#fffff",
-    "navigationBarTitleText": "测试小程序",
-    "navigationBarTextStyle": "black",
-    "enablePullDownRefresh": true,
-    "backgroundColor": "#eeeeee",
-    "onReachBottomDistance": 50
-  },
-  "tabBar": {
-    "color": "#000000",
-    "selectedColor": "#0000000",
-    "postion": "top",
-    "list": [
-      {
-        "pagePath": "pages/index/index",
-        "text": "阅读",
-        "iconPath": "resource/images/tab/yuedu.png",
-        "selectedIconPath": "resource/images/tab/yuedu_hi.png"
-      },
-      {
-        "pagePath": "pages/movie/movie",
-        "text": "电影",
-        "iconPath": "resource/images/tab/dianying.png",
-        "selectedIconPath": "resource/images/tab/dianying_hi.png"
-      }
-    ]
-  }
+    "pages": [
+        "pages/movies/movies",
+        "pages/welcome/welcome",
+        "pages/index/index",
+        "pages/index/post-detail/post-detail"
+    ],
+    "window": {
+        "backgroundTextStyle": "dark",
+        "navigationBarBackgroundColor": "#fffff",
+        "navigationBarTitleText": "测试小程序",
+        "navigationBarTextStyle": "black",
+        "enablePullDownRefresh": true,
+        "backgroundColor": "#eeeeee",
+        "onReachBottomDistance": 50
+    },
+    "tabBar": {
+        "color": "#000000",
+        "selectedColor": "#0000000",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "阅读",
+                "iconPath": "resource/images/tab/yuedu.png",
+                "selectedIconPath": "resource/images/tab/yuedu_hi.png"
+            },
+            {
+                "pagePath": "pages/movies/movies",
+                "text": "电影",
+                "iconPath": "resource/images/tab/dianying.png",
+                "selectedIconPath": "resource/images/tab/dianying_hi.png"
+            }
+        ]
+    }
 }

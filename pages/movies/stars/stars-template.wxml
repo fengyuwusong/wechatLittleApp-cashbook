@@ -1,0 +1,22 @@
+<!--pages/movie/starts/starts.wxml-->
+<!-- <template name="startTemplate">
+  <view class='stars'>
+    <block wx:for="{{stars}}" wx:for-item="i">
+      <image wx:if="{{i}}" src='/resource/images/icon/star.png'></image>
+       <image wx:else src='/resource/images/icon/none-star.png'></image>
+    </block>
+  </view>
+  <text class='star-score'>{{score}}</text>
+</template> -->
+<template name="starsTemplate">
+    <view class="stars-container">
+        <view class="stars">
+            <image src="/resource/images/icon/star.png"></image>
+            <image src="/resource/images/icon/star.png"></image>
+            <image src="/resource/images/icon/star.png"></image>
+            <image src="/resource/images/icon/star.png"></image>
+            <image src="/resource/images/icon/star.png"></image>
+        </view>
+        <text class="stars-score">{{average}}</text>
+    </view>
+</template>

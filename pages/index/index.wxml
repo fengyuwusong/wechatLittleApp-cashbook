@@ -1,14 +1,15 @@
 <!--pages/index/index.wxml-->
 <import src="post-item/post-item-template.wxml"/>
-<swiper indicator-dots='true' autoplay='true' interval='3000'>
+<!--事件冒泡捕捉  -->
+<swiper indicator-dots='true' autoplay='true' interval='3000' catchtap="onSwiperPostTap">
     <swiper-item>
-        <image src="/resource/images/wx.png"></image>
+        <image src="/resource/images/wx.png" data-post-id="3"></image>
     </swiper-item>
     <swiper-item>
-        <image src="/resource/images/vr.png"></image>
+        <image src="/resource/images/vr.png" data-post-id="4"></image>
     </swiper-item>
     <swiper-item>
-        <image src="/resource/images/wx.png"></image>
+        <image src="/resource/images/iqiyi.png" data-post-id="5"></image>
     </swiper-item>
 </swiper>
 

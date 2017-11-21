@@ -1,5 +1,7 @@
 <view class="container">
   <image class="head-image" src="{{data.imgSrc}}"></image>
+  <image class='audio' wx:if="{{!isPlayingMusic}}" src='/resource/images/music/music-start.png' catchtap='onMusicTap'></image>
+  <image wx:else  class="audio" src='/resource/images/music/music-stop.png' catchtap='onMusicTap'></image>
   <view class="author-date">
     <image src="{{data.avatar}}" class="avatar"></image>
     <text class="author">{{data.author}}</text>
