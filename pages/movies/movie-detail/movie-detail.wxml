@@ -1,0 +1,68 @@
+<!--pages/movies/movie-detail/movie-detail.wxml-->
+<view class='container'>
+    <view class='top-image'>
+        <image src="{{image}}" />
+    </view>
+    <view class='top'>
+        <text class='title'>{{title}}</text>
+        <text class='address-year'>{{address}} · {{year}}</text>
+        <view class='like-comment'>
+            <view>
+                <text>{{collect_count}}</text>
+                <text class='text'> 人喜欢</text>
+            </view>
+            <view>
+                <text>{{comments_count}}</text>
+                <text class='text'> 条评论</text>
+            </view>
+        </view>
+    </view>
+    <!--电影封面  -->
+    <image class='movie-image' src="{{image}}"></image>
+    <view class='content'>
+        <text class='sec-title'>{{original_title}}</text>
+        <view class='score'>
+            <text class='left-text'>评分</text>
+            <view class='right-text'>
+                <block wx:for="{{stars}}" wx:for-item="i" wx:key="movie-detail-star">
+                    <image wx:if="{{i}}" src='/resource/images/icon/star.png'></image>
+                    <image wx:else src='/resource/images/icon/chat.png'></image>
+                </block>
+            </view>
+            <text class='score-text'>{{average}}</text>
+        </view>
+        <view>
+            <text class='left-text'>导演</text>
+            <text class='right-text'>{{directors}}</text>
+        </view>
+        <view>
+            <text class='left-text'>影人</text>
+            <text class='right-text'>
+                <block wx:for="{{casts}}" wx:for-item="cast" wx:key="cast">
+                    <text>{{cast.name}} </text>
+                </block>
+            </text>
+        </view>
+        <view>
+            <text class='left-text'>类型</text>
+            <text class='right-text'>{{genres}}</text>
+        </view>
+    </view>
+    <view class='introduce'>
+        <text>剧情简介</text>
+        <text class='text'>
+            {{summary}}
+        </text>
+    </view>
+    <view class='person'>
+        <text>影人</text>
+        <scroll-view scroll-x class='scroll-view'>
+            <block wx:for="{{casts}}" wx:for-item="cast" wx:key="scroll-view-cast">
+                <view>
+                    <image src='{{cast.avatars}}'></image>
+                    <text>{{cast.name}}</text>
+                </view>
+            </block>
+        </scroll-view>
+    </view>
+</view>

@@ -1,0 +1,6 @@
+@import "../movie/movie-template.wxss";
+
+.movie-container {
+    display: inline-flex;
+    margin-bottom: 10px;
+}

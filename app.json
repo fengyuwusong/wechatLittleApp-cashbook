@@ -3,6 +3,8 @@
         "pages/movies/movies",
         "pages/welcome/welcome",
         "pages/index/index",
+        "pages/movies/movie-detail/movie-detail",        
+        "pages/movies/more-movies/more-movies",
         "pages/index/post-detail/post-detail"
     ],
     "window": {

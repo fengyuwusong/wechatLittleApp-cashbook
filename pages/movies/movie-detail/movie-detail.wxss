@@ -1,0 +1,159 @@
+/* pages/movies/movie-detail/movie-detail.wxss */
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.top {
+    /* background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat; */
+    height: 320rpx;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50rpx;
+    padding-left: 40rpx;
+    position: absolute;
+}
+
+.top-image {
+    height: 320rpx;
+    overflow: hidden;
+}
+
+.top-image image {
+    width: 100%;
+    -webkit-filter: blur(15px);
+    -moz-filter: blur(15px);
+    -o-filter: blur(15px);
+    -ms-filter: blur(15px);
+    filter: blur(15px);
+}
+
+.title {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 5rpx;
+    color: #fff;
+}
+
+.address-year {
+    margin-top: 45rpx;
+    font-size: 15px;
+    color: #fff;
+}
+
+.like-comment {
+    display: flex;
+    flex-direction: row;
+    margin-top: 55rpx;
+}
+
+.like-comment text {
+    color: #f21146;
+}
+
+.like-comment .text {
+    color: #666;
+    margin-left: 10rpx;
+    margin-right: 25rpx;
+}
+
+.movie-image {
+    position: absolute;
+    width: 170rpx;
+    height: 235rpx;
+    right: 30rpx;
+    top: 160rpx;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    height: 330rpx;
+    border-bottom: 1px solid #999;
+    color: #333;
+    padding-top: 50rpx;
+    padding-left: 40rpx;
+}
+
+.content .sec-title {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2rpx;
+}
+
+.content .score block {
+    margin-left: 25rpx;
+}
+
+.content .score {
+    margin-top: 50rpx;
+}
+
+.content .score image {
+    height: 18rpx;
+    width: 18rpx;
+    margin-left: 5rpx;
+}
+
+.left-text {
+    color: #999;
+    margin-top: 25rpx;
+}
+
+.right-text {
+    margin-left: 25rpx;
+    color: #666;
+    display: inline;
+}
+
+.score-text {
+    margin-left: 20rpx;
+    color: #1f3463;
+}
+
+.introduce {
+    padding-top: 50rpx;
+    padding-left: 35rpx;
+    padding-bottom: 50rpx;
+    color: #999;
+    border-bottom: 1px solid #999;
+}
+
+.introduce .text {
+    color: #333;
+}
+
+.person {
+    padding-top: 50rpx;
+    padding-left: 35rpx;
+    padding-bottom: 50rpx;
+    color: #999;
+}
+
+.person .scroll-view {
+    white-space: nowrap;
+    display: flex;
+    flex-direction: row;
+}
+
+.person .scroll-view view {
+    display: inline-block;
+    width: 200rpx;
+    height: 200rpx;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.person .scroll-view view image {
+    margin-top: 45rpx;
+    margin-right: 40rpx;
+    width: 170rpx;
+    height: 170rpx;
+    display: block;
+}
+
+.person .scroll-view view text {
+    display: inline-block;
+}
