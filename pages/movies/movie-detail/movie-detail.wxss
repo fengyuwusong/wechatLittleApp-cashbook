@@ -134,26 +134,23 @@
 
 .person .scroll-view {
     white-space: nowrap;
-    display: flex;
-    flex-direction: row;
 }
 
-.person .scroll-view view {
-    display: inline-block;
-    width: 200rpx;
-    height: 200rpx;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.person .scroll-view view image {
-    margin-top: 45rpx;
+.cast-container{
+    display:inline-flex;
+    flex-direction: column;
+    margin-bottom: 50rpx;
     margin-right: 40rpx;
     width: 170rpx;
-    height: 170rpx;
-    display: block;
+    text-align:center;
+    white-space: normal;
 }
 
-.person .scroll-view view text {
-    display: inline-block;
+.cast-img{
+    width: 170rpx;
+    height: 210rpx;
 }
+.cast-name{
+    margin: 10rpx auto 0;
+}
+

@@ -18,7 +18,7 @@
         </view>
     </view>
     <!--电影封面  -->
-    <image class='movie-image' src="{{image}}"></image>
+    <image class='movie-image' data-src="{{image}}" src="{{image}}" catchtap="viewMoviePostImg"></image>
     <view class='content'>
         <text class='sec-title'>{{original_title}}</text>
         <view class='score'>
@@ -40,7 +40,7 @@
             <text class='right-text'>
                 <block wx:for="{{casts}}" wx:for-item="cast" wx:key="cast">
                     <text>{{cast.name}} </text>
-                </block>
+            </block>
             </text>
         </view>
         <view>
@@ -56,11 +56,11 @@
     </view>
     <view class='person'>
         <text>影人</text>
-        <scroll-view scroll-x class='scroll-view'>
+        <scroll-view class='scroll-view' scroll-x="true" style="width:100%">
             <block wx:for="{{casts}}" wx:for-item="cast" wx:key="scroll-view-cast">
-                <view>
-                    <image src='{{cast.avatars}}'></image>
-                    <text>{{cast.name}}</text>
+                <view class="cast-container">
+                    <image class="cast-img" src="{{cast.avatars}}"></image>
+                    <text class="cast-name">{{cast.name}}</text>
                 </view>
             </block>
         </scroll-view>
